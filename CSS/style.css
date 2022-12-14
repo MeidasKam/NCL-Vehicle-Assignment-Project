@@ -1,10 +1,20 @@
 *{
   --black: #000000;
-  --grey: #8080800;
+  --grey: #808080;
   --white: #fff;
 }
 
 body {background-color: var(--black);
+}
+.button{
+    text-align: center;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--grey);
+    color: black;
 }
 ul {display: flex;
     justify-content: left;
@@ -31,4 +41,63 @@ li a{font-size: 32px;
 li a:hover {
     background-color: #C0C0C0;
 }
-.Logo {width: 20%; margin-right: 5px; border-radius: 3px;float: left;}
+.Logo {width: 150px;
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 3px;
+    float: left;
+}
+/*Index Page Grids*/
+.HomeGrid {
+    display: grid;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 25px;
+}
+.pdf-size {
+    width: 100%;
+    height: 420px;
+}
+.HomeGrid div {
+    border: 3px solid var(--grey);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    height: fit-content;
+    background-color: var(--white);
+}
+.HomeGrid img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.HomeGrid h2 {
+    margin-bottom: 0px;
+    text-align: center;
+    color: black;
+}
+.HomeGrid p {
+    margin: 0px;
+    margin-bottom: 1%;
+}
+.HomeGrid a {
+    text-align: center;
+    margin: 0px;
+}
+@media only screen and (min-width: 1200px) {
+    .HomeGrid div:nth-child(3n-2) {grid-column: 1 / span 2;}
+    .HomeGrid div:nth-child(3n-1) {grid-column: 3 / span 2;}
+    .HomeGrid div:nth-child(3n) {grid-column: 5 / span 2;}
+}
+@media only screen and (min-width: 650px) and (max-width: 1200px) {
+    .HomeGrid div:nth-child(odd) {grid-column: 1 / span 3;}
+    .HomeGrid div:nth-child(even) {grid-column: 4 / span 3;}
+} 
+@media only screen and (max-width: 650px) {
+    .HomeGrid div {grid-column: 1 / span 6;}
+}
+/*End Of Index Page Grids*/

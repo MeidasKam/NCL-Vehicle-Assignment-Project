@@ -24,9 +24,7 @@ ul {display: flex;
     padding: 0;
     overflow: hidden;
 }
-li {float: left;
-}
-li a{font-size: 32px;
+.navbutton {font-size: 32px;
     color: var(--white);
     background-color: var(--black);
     text-align: center;
@@ -35,11 +33,11 @@ li a{font-size: 32px;
     text-decoration: none;
     border-radius: 5px;
 }
+.navbutton:hover {
+    background-color: #C0C0C0;
+}
 .selected {
     background-color: #3a444b;
-}
-li a:hover {
-    background-color: #C0C0C0;
 }
 .Logo {width: 160px;
     height: 60px;
@@ -68,7 +66,7 @@ li a:hover {
     width: 210px;
     height: 210px;
 }
-.HomeGrid div {
+.HomeGrid .itemstyling {
     text-align: center;
     border: 3px solid var(--grey);
     border-radius: 15px;
@@ -130,3 +128,49 @@ li a:hover {
     margin: 0px;
 }
 /*End Of Index Page Grids*/
+.Carlistings {width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.Vehitem {
+    list-style-type: none;
+    text-align: center;
+    border: 3px solid var(--grey);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #504b4b;
+    width: page;
+}
+.VehitemImg{
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    float: left;
+    background-color: white;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Carlistings h2 {
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+.Carlistings p {
+    margin: 0px;
+    margin-bottom: 1%;
+}
+.Carlistings a {
+    text-align: center;
+    margin: 0px;
+}
+.Vehitemlist {
+    display: inline;
+    flex-direction: column;
+}
+.carbutton {
+    background-color: var(--grey);
+}

@@ -175,18 +175,44 @@ li .aligned {
 }
 .Vehdesc {
     float: left;
-    display: block;
+    display: flex;
     flex-direction: column;
 }
 .carbutton {
     background-color: var(--grey);
 }
-.VehitemImg:hover {
-    background-color: limegreen;
-    content: url(../Images/Veh_Comp_Logos/Mercedes\ Logo.png);
-}
 .icon {
     background-color: red;
     height: 50px;
     width: 50px;
+}
+.CarListingImg1:hover {
+    content: url(../Images/Car_images/BMW/BMW\ 840i\ M\ Sport\ Coupe\ -\ Inside.png);
+}
+.CarListingImg2:hover {
+    content: url(../Images/Car_images/BMW/BMW\ Z4\ M40i\ -\ Inside.png);
+}
+.CarListingImg3:hover {
+    content: url(../Images/Car_images/Mercedes/Mercedes\ E350\ CID\ -\ Inside.png);
+}
+.CarListingImg4:hover {
+    content: url(../Images/Car_images/Mercedes/Mercedes\ A\ 180\ AMG\ Line\ Executive\ Saloon\ -\ Inside.png);
+}
+.CarListingImg5:hover {
+    content: url(../Images/Car_images/Vauxhall/Vauxhall_Mokka_Inside.jpeg);
+}
+.CarListingImg6:hover {
+    content: url(../Images/Car_images/Vauxhall/Vauxhall_Astra_Inside.png);
+}
+.CarListingImg7:hover {
+    content: url(../Images/Car_images/Volkswagen/Volkswagen\ Passat\ 2.0\ TDI\ -\ Inside.png);
+}
+.CarListingImg8:hover {
+    content: url(../Images/Car_images/Volkswagen/Volkswagen\ Golf\ 8\ -\ Inside.png);
+}
+.CarListingImg9:hover {
+    content: url(../Images/Car_images/Volvo/Volvo\ S90\ Recharge\ -\ Inside.png);
+}
+.CarListingImg10:hover {
+    content: url(../Images/Car_images/Volvo/Volvo\ XC40\ -\ Inside.png);
 }

@@ -1,0 +1,12 @@
+*{
+  --grey: #808080;
+}
+.Termsandconditions {
+    color: var(--grey);
+}
+.read {
+    color: var(--grey);
+}
+.readbody {
+    color: var(--grey);
+}
